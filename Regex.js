@@ -13,3 +13,8 @@ console.log(inputTest.match(RegExpressionConst));
 
 console.log(inputTest.match(/^Hello/gi)); //Expected: [Hello] is the first instance.
 console.log(inputTest.match(/^world/gi)); //Expected: [null] as 'world' is not first. 
+
+/* Using .test() using $ anchor */
+
+const regExpTest = new RegExp('there$', 'gi'); 
+console.log(regExpTest.test(inputTest));
